@@ -14,6 +14,7 @@ Fill in your forms to make sure they work.
 4. Create a superuser. - DONE
 5. Make a couple of short posts with admin site. - DONE
 6. Create a home page that shows all posts.
+    - Home page only shows a simple message, shows the posts.
 7. Create pages to make new posts and edit existing posts.
 
 19-2: Blog Accounts
