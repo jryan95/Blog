@@ -1,5 +1,14 @@
 <h1><a href="{% url 'blogs:index' %}">My Blog</a></h1>
 
-<p><a href="{% url 'blogs:posts' %}">Blog Posts</a></p>
+<p>
+    <a href="{% url 'blogs:posts' %}">Blog Posts</a> -
+    {% if user.is_authenticated %}
+        Hello, {{ user.username }}.
+        <a href="{% url 'users:logout' %}">Log out</a>
+    {% else %}
+        <a href="{% url 'users:login' %}">Log in</a> - 
+        <a href="{% url 'users:register' %}">Register</a>
+    {% endif %}
+</p>
 
 {% block content %}{% endblock content %}

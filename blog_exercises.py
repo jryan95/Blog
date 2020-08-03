@@ -22,13 +22,15 @@ you start in Exercise 19-1 (page 421). Make sure logged-in users see
 their username somewhere on the screen and unregistered users see a link
 to the registration page.
 
-1. Create a login page
-2. Create a logout page
-2. Create a register page
-3. Check if the user is logged in
+1. Create a login page - DONE, help from LL
+2. Create a logout page - DONE, help from LL
+2. Create a register page - DONE, help from LL
+3. Check if the user is logged in - DONE
     - display name if yes
     - display register link if no
 
 20-2: Stylish Blog:
 Use Bootstrap to style the Blog project you created in Chapter 19.
+
+- Style all pages using Bootstrap4
 """
