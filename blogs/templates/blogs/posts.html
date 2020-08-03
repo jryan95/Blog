@@ -1,0 +1,17 @@
+{% extends "blogs/base.html" %}
+
+
+{% block content %}
+    {% for post in posts %}
+        <ul>
+            <li>
+                {{ post.date_added|date:'M d, Y H:i' }}
+                <a href="{% url 'blogs:post' post.id %}">{{ post.title|linebreaks }}</a>
+            </li>
+        </ul>
+    {% empty %}
+        <p>No posts have been made yet.</p>
+    {% endfor %}
+
+    <a href="{% url 'blogs:new_post' %}">Add post</a>
+{% endblock content %}
