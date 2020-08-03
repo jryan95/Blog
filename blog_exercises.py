@@ -15,6 +15,7 @@ Fill in your forms to make sure they work.
 5. Make a couple of short posts with admin site. - DONE
 6. Create a home page that shows all posts. - DONE
 7. Create pages to make new posts and edit existing posts. - DONE
+8. Add 'author' to each post - DONE
 
 19-2: Blog Accounts
 Add a user authentication and registration system to the Blog project
@@ -28,6 +29,7 @@ to the registration page.
 3. Check if the user is logged in - DONE
     - display name if yes
     - display register link if no
+4. Make sure editing/deleting a post is done by the owner/admin of the post. - DONE
 
 20-2: Stylish Blog:
 Use Bootstrap to style the Blog project you created in Chapter 19.

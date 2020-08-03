@@ -1,9 +1,10 @@
 {% extends "blogs/base.html" %}
 
 {% block content %}
-    {{ post.date_added|date:'M d, Y H:i' }}
+    {{ post.date_added|date:'M d, Y H:i' }} - {{ post.owner }}
     <h4>{{ post.title|linebreaks }}</h4>
     <p>{{ post.text|linebreaks }}</p>
 
-    <a href="{% url 'blogs:edit_post' post.id %}">Edit post</a>
+    <a href="{% url 'blogs:edit_post' post.id %}">Edit post</a> -
+    <a href="{% url 'blogs:delete_post' post.id %}">Delete post</a>
 {% endblock content %}

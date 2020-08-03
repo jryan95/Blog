@@ -5,7 +5,7 @@
     {% for post in posts %}
         <ul>
             <li>
-                {{ post.date_added|date:'M d, Y H:i' }}
+                <p>{{ post.date_added|date:'M d, Y H:i' }} - {{ post.owner }}</p>
                 <a href="{% url 'blogs:post' post.id %}">{{ post.title|linebreaks }}</a>
             </li>
         </ul>
